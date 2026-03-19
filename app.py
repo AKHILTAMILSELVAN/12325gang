@@ -5,6 +5,8 @@ import pyttsx3
 import random
 import threading
 from flask import Flask, jsonify, Response
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="pyttsx3")
 
 app = Flask(__name__)
 
